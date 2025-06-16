@@ -1,0 +1,403 @@
+/* src/components/Home.css */
+
+.home-content {
+    padding-top: 0px; /* Adjust based on Navbar height */
+    text-align: center;
+    color: #e8e8e8; /* Light gray text */
+}
+
+.homepage-container {
+    height:100vh;
+    margin-top: 0px; /* Adjust this value to match the height of your navbar */
+    position: relative;
+    box-sizing: border-box; /* Ensure padding and borders are included in the total width/height */
+    /* border: 2px solid red; */
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    padding: 0px 0 100px 0;   
+    /* border: 2px solid red; */
+    
+}
+
+/* General Layout */
+.homepage-container {
+    min-height: 100vh;
+    margin-top: 0px; /* Adjust based on navbar height */
+    padding-bottom: 50px; /* Space at the bottom for footer or additional sections */
+    position: relative;
+}
+
+/* Search Section */
+.search {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    margin-top: 200px;
+    margin-bottom: 50px; /* Space between sections */
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    width: 50%; /* Allow input and button to take space proportionally */
+    justify-content: space-between; /* Space between input and button */
+}
+
+/* Category Section */
+.category-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #e8e8e8;
+    background-color: #0c1e2b;
+    margin-bottom: 50px; /* Added space between sections */
+}
+
+/* Business Cards Section */
+.business-cards-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #e8e8e8;
+    background-color: #0c1e2b;
+}
+
+
+
+.search-section input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #5c848e; /* Teal border */
+    border-radius: 10px;
+    font-size: 16px;
+    background: #0c1e2b; /* Dark blue */
+    color: #e8e8e8;
+}
+
+/* Input Focus */
+input:focus {
+    border-color: #87b3b8; /* Light teal on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(135, 179, 184, 0.5);
+}
+
+/* Buttons */
+button {
+    background: #5c848e; /* Teal */
+    color: white;
+    font-family: poppins;
+    border: none;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 170px;
+    margin: 10px;
+    transition: background 0.3s ease;
+}
+
+.no-business-found{
+    width:100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+
+button:hover {
+    background: #87b3b8; /* Lighter teal on hover */
+}
+/* .search-section{
+    display: flex;
+    width: 50%;
+   
+    padding: 100px 0 0 20px;
+    justify-content: space-around;
+} */
+
+.image-section img{
+    border-radius: 10px;
+}
+
+
+/* src/components/Home.css */
+
+/* Category Section Styles */
+.category-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #e8e8e8; /* Light gray text */
+    background-color: #0c1e2b; /* Dark background */
+}
+
+.category-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #87b3b8; /* Light teal color for title */
+}
+
+/* Grid Layout for Categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Category Item Styling */
+.category-item {
+    background-color: #1a2d37; /* Darker background for items */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-10px); /* Lift up effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff; /* White text for category names */
+}
+/* Section Container */
+.business-cards-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #e8e8e8;
+    background-color: #0c1e2b;
+}
+
+.business-cards-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #87b3b8;
+}
+
+/* Business Cards Grid */
+.business-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px; /* Space between cards */
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Business Card Styling */
+.business-card {
+    background-color: #1a2d37;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 340px; /* Fixed width for all cards */
+    min-height: 400px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    /* justify-content: space-between; */
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.business-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Business Card Image */
+.business-image {
+    width: 100%;
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images fit without distortion */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #87b3b8;
+
+}
+.business-info{
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+/* Business Card Info */
+.business-info h3 {
+    font-size: 18px;
+    /* margin: 10px 0; */
+    color: #fff;
+}
+
+.business-info p {
+    font-size: 14px;
+    text-align: left;
+    margin: 5px 0;
+    color: #e8e8e8;
+}
+
+.business-nr{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.rating {
+    font-size: 16px; /* Adjust as needed */
+    color: #e8e8e8; /* Light text color */
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Space between stars and numeric rating */
+}
+
+.filled-star {
+    color: #FFD700; /* Gold for filled stars */
+}
+
+.empty-star {
+    color: #ccc; /* Gray for unfilled stars */
+}
+
+.numeric-rating {
+    color: #e8e8e8; /* Light text for numeric rating */
+    margin-left: 8px;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #0c1e2b; /* Dark background */
+    color: #e8e8e8; /* Light gray text */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px; /* Space between footer and last section */
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #87b3b8; /* Light teal */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design for Categories */
+@media (max-width: 768px) {
+    .category-grid, .business-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+    
+    .search {
+        /* border: 2px solid red; */
+        /* margin-left: 20px; */
+        margin-top: 100px;
+        padding-top: 50px;
+        flex-direction: column-reverse; /* Stack the input and button vertically */
+        width: 100%; /* Full width */
+        align-items: center; /* Center the elements */
+    }
+
+    .search input {
+        width: 90%; /* Adjust input width for mobile */
+        height: 45px; /* Adjust input height */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+    .search-section{
+        /* border: 3px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 90%; /* Button takes full width on mobile */
+        height: 45px; /* Adjust button height */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    .footer {
+        background-color: #0c1e2b; /* Dark background */
+        color: #e8e8e8; /* Light gray text */
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 40px; /* Space between footer and last section */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .category-grid,.business-cards {
+        grid-template-columns: 1fr; /* 1 column for mobile screens */
+    }
+
+    .search {
+        padding: 20px 15px; /* Further reduce padding */
+        /* margin-top: 80px; Adjust margin */
+        margin-top: 100px;
+        padding-top: 50px;
+        flex-direction: column-reverse; /* Stack the input and button vertically */
+        width: 90vh; /* Full width */
+        align-items: center;
+    }
+
+    .search img{
+        width: 360px;
+        height: auto;
+    }
+
+    .search-section input {
+        width: 60%; /* Make the input field almost full width */
+        font-size: 13px; /* Even smaller font size */
+    }
+
+    button {
+        width: 60%; /* Button takes almost full width */
+        font-size: 13px; /* Smaller button text */
+    }
+
+    .footer {
+        background-color: #0c1e2b; /* Dark background */
+        color: #e8e8e8; /* Light gray text */
+        padding: auto;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 40px; /* Space between footer and last section */
+    }
+}

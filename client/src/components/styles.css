@@ -1,0 +1,170 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    background:  #1a2d37; /* Gradient with dark blue and teal */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 5px; */
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100vh;
+    color: #e8e8e8; /* Light gray for text */
+}
+
+/* Container */
+.container {
+    background: #1a2d37; /* Dark navy blue */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    /* border: 4px soid #e8e8e8; */
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Title */
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #87b3b8; /* Light teal */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    font-family: poppins;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #5c848e; /* Teal border */
+    border-radius: 5px;
+    font-size: 13px;
+    background: #0c1e2b; /* Dark blue */
+    color: #e8e8e8;
+}
+
+/* Input Focus */
+input:focus {
+    border-color: #87b3b8; /* Light teal on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(135, 179, 184, 0.5);
+}
+
+/* Buttons */
+button {
+    background: #5c848e; /* Teal */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 105%;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #87b3b8; /* Lighter teal on hover */
+}
+
+/* Link */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #87b3b8; /* Teal for links */
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* General Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Adjust container width to occupy more space */
+        margin: 0 auto; /* Center the container */
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce heading size */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%; /* Full width for inputs */
+        padding: 10px;
+        margin: 10px 0; /* Add vertical spacing */
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 100%; /* Full width button */
+        padding: 10px;
+        background-color: #87b3b8; /* Light teal */
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #5c848e; /* Darker teal on hover */
+    }
+
+   
+}
+
+/* Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px; /* Reduce padding for extra small devices */
+        width: 95%; /* Slightly more width */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Smaller heading size */
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding: 8px; /* Slightly less padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    button {
+        padding: 8px; /* Smaller padding for the button */
+        font-size: 0.9rem;
+    }
+    .container a{
+        font-size: 0.5rem;
+    }
+}
+

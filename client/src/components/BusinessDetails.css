@@ -1,0 +1,424 @@
+.business-details-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    /* background-color: #0c1e2b; Dark Blue */
+    color: #e8e8e8; /* Light Gray text */
+}
+.businessDetails{
+    height: 100vh;
+    margin-top: 240px;
+}
+
+.business-details-left,
+.business-details-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #0c1e2b; /* Darker Background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+.business-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.rating .filled-star {
+    font-size: 1.2em;
+    color: #FFD700; /* Gold for filled stars */
+}
+
+.rating .empty-star {
+    font-size: 1.2em;
+    color: #87b3b8; /* Light Teal for empty stars */
+}
+
+.rating .numeric-rating {
+    margin-left: 10px;
+    color: #e8e8e8; /* Light Gray for numeric rating */
+}
+
+.business-details-right iframe {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for the map */
+}
+
+h1, h2 {
+    color: #87b3b8; /* Light Teal for headings */
+}
+
+p {
+    color: #e8e8e8; /* Light Gray text for better readability */
+}
+
+a {
+    color: #87b3b8; /* Light Teal for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5c848e; /* Slightly darker teal for hover effect */
+}
+
+
+.business-details-left:hover {
+    transform: translateY(-10px); /* Lift up effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.business-details-right:hover {
+    transform: translateY(-10px); /* Lift up effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-section {
+    background-color: #0c1e2b; 
+    padding: 50px 20px 20px 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  .review-section h2 {
+    color: #87b3b8; /* Light Teal for headings */
+  }
+  
+  /* .review-section p {
+    color: #e8e8e8; Light Gray text for instructions
+    margin-bottom: 20px;
+  } */
+  
+  .review-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rating-input {
+    margin-bottom: 20px;
+  }
+  
+  .rating-input label {
+    color: #e8e8e8;
+    font-weight: bold;
+  }
+  
+  .rating-input select {
+    padding: 10px;
+    background-color:  #0c1e2b;
+    color: #e8e8e8;
+    border: 1px solid #87b3b8;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+
+  .rating-input select:focus {
+    border-color: #87b3b8; /* Light teal on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(135, 179, 184, 0.5);
+}
+  
+  .review-text {
+    margin-bottom: 20px;
+  }
+  
+  .review-text label {
+    color: #e8e8e8;
+    font-weight: bold;
+  }
+  
+  .review-text textarea {
+    padding: 10px;
+    background-color:  #0c1e2b;
+    color: #e8e8e8;
+    border: 1px solid #87b3b8;
+     /* border: 1px solid #5c848e;  */
+    border-radius: 5px;
+    resize: vertical;
+    width: 100%;
+    /* width: 100%; */
+    /* height: 120px; */
+    /* margin-left: 20px; */
+  }
+
+  .review-text textarea:focus {
+    border-color: #87b3b8; /* Light teal on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(135, 179, 184, 0.5);
+}
+  
+  button {
+    background-color: #87b3b8; /* Light Teal */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #5c848e; /* Darker Teal for hover effect */
+  }
+  
+
+
+  /* BusinessDetails.css */
+
+/* Container for the whole reviews section */
+.reviews-section {
+  background-color: #0c1e2b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Title for the reviews section */
+.reviews-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #87b3b8;
+  margin-bottom: 15px;
+}
+
+/* If no reviews, message text */
+.reviews-section p {
+  font-size: 16px;
+  color: #e8e8e8;
+  margin-bottom: 10px;
+}
+
+/* Container for each individual review */
+.review-item {
+  background-color: #0c1e2b;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Review user's name */
+.review-item p strong {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e8e8e8;
+}
+
+/* Rating stars for the review */
+.review-item p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.filled-star {
+  color: #ffcc00;
+}
+
+.empty-star {
+  color: #ddd;
+}
+
+
+@media screen and (max-width: 768px) {
+  .business-details-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;  
+  }
+  .business-details-left,
+    .business-details-right {
+        flex: none;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #1a2d37; /* Keep the darker background */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Maintain the shadow effect */
+    }
+    .business-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+  }
+
+  .rating .filled-star,
+    .rating .empty-star {
+        font-size: 1em; /* Smaller stars on mobile */
+    }
+
+    .rating .numeric-rating {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .business-details-right iframe {
+        width: 100%;
+        height: 250px; /* Adjust iframe height for smaller screens */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    h1, h2 {
+        font-size: 20px; /* Smaller headings */
+        padding: 10px;
+    }
+
+    p {
+        font-size: 14px; /* Smaller text for better readability */
+        padding: 10px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .review-section {
+        padding: 20px;
+    }
+
+    .review-section h2 {
+        font-size: 20px; /* Slightly smaller title for reviews */
+    }
+
+    .review-form {
+        flex-direction: column;
+    }
+
+    .rating-input,
+    .review-text {
+        margin-bottom: 15px;
+    }
+
+    .rating-input select {
+        padding: 8px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .review-text textarea {
+        padding: 8px;
+        margin-top: 10px;
+        font-size: 14px;
+        width: 100%;
+        height: 100px; /* Smaller textarea */
+    }
+
+    button {
+        padding: auto;
+        font-size: 14px; /* Smaller button text */
+        margin: 0;
+    }
+
+    .reviews-section {
+        padding: 15px;
+    }
+
+    .reviews-section h2 {
+        font-size: 20px; /* Adjust review section title */
+    }
+
+    .review-item {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .review-item p strong {
+        font-size: 16px; /* Smaller name text */
+        padding: 10px;
+    }
+
+    .review-item p {
+        font-size: 14px;
+    }
+
+    .filled-star,
+    .empty-star {
+        font-size: 1em; /* Adjust star size */
+    }
+}
+
+/* For extra small devices (Phones in portrait) */
+@media screen and (max-width: 480px) {
+    /* .business-details-container {
+        gap: 5px;
+        padding: 10px;
+    } */
+
+    .business-details-left,
+    .business-details-right {
+        padding: 10px;
+    }
+
+    .business-image {
+        margin-bottom: 10px;
+    }
+
+    .rating .filled-star,
+    .rating .empty-star {
+        font-size: 0.9em; /* Even smaller stars */
+    }
+
+    .business-details-right iframe {
+        height: 200px; /* Adjust iframe height further */
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px; /* Even smaller text */
+        /* padding: 20px; */
+    }
+
+    .review-section h2 {
+        font-size: 18px;
+    }
+
+    .review-form {
+        flex-direction: column;
+    }
+
+    .rating-input select {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .review-text textarea {
+        padding: 6px;
+        font-size: 12px;
+        height: 80px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .reviews-section h2 {
+        font-size: 18px;
+    }
+
+    .review-item {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .review-item p strong {
+        font-size: 14px;
+    }
+
+    .review-item p {
+        font-size: 12px;
+    }
+
+    .filled-star,
+    .empty-star {
+        font-size: 0.9em;
+    }
+}
+
+
+
