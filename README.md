@@ -66,12 +66,12 @@ The **Business Directory App** is designed to provide a user-friendly interface 
 git clone https://github.com/Pavani-Choppa/BusinessDirectoryApp.git
 cd BusinessDirectoryApp
 
-# Start Backend
+##Start Backend
 cd backend
 npm install
 node server.js
 
-# Start Frontend
+##Start Frontend
 cd ../client
 npm install
 npm start
@@ -80,14 +80,14 @@ Frontend runs on: http://localhost:3000
 Backend runs on: http://localhost:5000
 
 
-🌍 Use Cases
+# 🌍 Use Cases
 Discover and explore local businesses
 
 Find contact and service details easily
 
 View businesses by category for quicker navigation
 
-👍 Advantages
+# 👍 Advantages
 Simple and intuitive user experience
 
 Full-stack MERN architecture
@@ -96,14 +96,14 @@ Easily scalable and customizable
 
 Clean and responsive UI
 
-⚠️ Limitations
+# ⚠️ Limitations
 No user login or admin dashboard yet
 
 Requires manual MongoDB setup
 
 Not deployed live (can be done via Vercel/Render)
 
-🔮 Future Scope
+# 🔮 Future Scope
 Add user authentication (signup/login)
 
 Admin panel to manage listings
@@ -115,6 +115,6 @@ Deployment to cloud (Vercel, Netlify, Render, etc.)
 Mobile app version using React Native
 
 
-🧑‍💻 Author
+##🧑‍💻 Author
 Pavani Choppa
 
