@@ -12,20 +12,20 @@ The **Business Directory App** is designed to provide a user-friendly interface 
 ---
 
 ## 📂 Folder Structure
-business_directory_App/
-├── backend/ # Express.js server with MongoDB
-│ └── models/ # Mongoose models
-│ └── routes/ # API endpoints
-│ └── server.js # Main server file
-├── client/ # React frontend
-│ └── public/
-│ └── src/
-│ └── components/ # Reusable components like Navbar, Home, etc.
-│ └── App.js # Frontend entry point
-│ └── index.js
-├── .gitignore
-├── package.json # Project metadata
-└── README.md
+    business_directory_App/
+    ├── backend/ # Express.js server with MongoDB
+    │ └── models/ # Mongoose models
+    │ └── routes/ # API endpoints
+    │ └── server.js # Main server file
+    ├── client/ # React frontend
+    │ └── public/
+    │ └── src/
+    │ └── components/ # Reusable components like Navbar, Home, etc.
+    │ └── App.js # Frontend entry point
+    │ └── index.js
+    ├── .gitignore
+    ├── package.json # Project metadata
+    └── README.md
 
 
 ---
