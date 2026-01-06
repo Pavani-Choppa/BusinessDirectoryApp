@@ -143,7 +143,7 @@ const Home = () => {
 
         // Fetch data from backend
         useEffect(() => {
-            axios.get('http://localhost:5000/api/businesses')
+            axios.get('https://business-directory-app-backend.onrender.com/api/businesses')
                 .then(response => {
                     setBusinesses(response.data);
                     setFilteredBusinesses(response.data);
