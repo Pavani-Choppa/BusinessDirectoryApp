@@ -126,7 +126,7 @@ const BusinessDetails = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/businesses/${id}`)
+        fetch(`https://business-directory-app-backend.onrender.com/api/businesses/${id}`)
           .then((response) => response.json())
           .then((data) => {
             setBusiness(data);
@@ -137,7 +137,7 @@ const BusinessDetails = () => {
             setLoading(false);
           });
 
-        fetch(`http://localhost:5000/api/reviews?businessId=${id}`)
+        fetch(`https://business-directory-app-backend.onrender.com/api/reviews?businessId=${id}`)
             .then((response) => response.json())
             .then((data) => {
                 setReviews(data);
@@ -193,7 +193,7 @@ const BusinessDetails = () => {
     //     };
 
     const fetchReviews = (businessName) => {
-        fetch(`http://localhost:5000/api/reviews?businessName=${encodeURIComponent(businessName)}`)
+        fetch(`https://business-directory-app-backend.onrender.com/api/reviews?businessName=${encodeURIComponent(businessName)}`)
           .then((response) => {
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
@@ -223,7 +223,7 @@ const BusinessDetails = () => {
         };
       
         // API call to submit the review
-        fetch("http://localhost:5000/api/reviews", {
+        fetch("https://business-directory-app-backend.onrender.com/api/reviews", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
